@@ -73,6 +73,47 @@ input, select, textarea {
 	appearance: none;
 }
 
+.home-text {
+	color: #464444;
+}
+
+.box {
+	color: #000;
+}
+
+#status {
+	width: 100%;
+	border: 0;
+	border-radius: 4px;
+	outline: 0;
+	padding: 0.7em 1.5em 0.7em 1.5em;
+}
+
+#status.success {
+	background-color: rgb(143, 206, 50);
+	animation: status 4s ease forwards;
+}
+
+#status.error {
+	background-color: rgb(250, 129, 92);
+	animation: status 4s ease forwards;
+}
+
+@keyframes status {
+	0% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	90% {
+		opacity: 1;
+		pointer-events: all;
+	}
+	100% {
+		opacity: 0;
+		pointer-events: none;
+	}
+}
+
 /* Row */
 
 	.row {
@@ -1328,9 +1369,11 @@ input, select, textarea {
 	body, input, textarea, select {
 		font-family: 'Source Sans Pro', sans-serif;
 		font-weight: 300;
-		color: #777777;
+		color: #111111;
 		font-size: 20pt;
 		line-height: 1.75em;
+		border-radius: 4px;
+		width: 100%;
 	}
 
 		@media screen and (max-width: 1680px) {
@@ -1478,10 +1521,12 @@ input, select, textarea {
 	form select,
 	form textarea {
 		-webkit-appearance: none;
-		border: 0;
+		border: 2px solid grey;
 		background: #f4f4f4;
 		padding: 0.75em;
+		margin: 8px 0;
 		width: 100%;
+		
 		-moz-transition: background-color .25s ease-in-out;
 		-webkit-transition: background-color .25s ease-in-out;
 		-ms-transition: background-color .25s ease-in-out;
@@ -1524,6 +1569,7 @@ input, select, textarea {
 	section, article {
 		margin-bottom: 3em;
 		background: rgb(248, 246, 246);
+		flex-direction: column;
 	}
 
 		section > :last-child, section:last-child, article > :last-child, article:last-child {
@@ -1597,8 +1643,8 @@ input, select, textarea {
 		transition: background-color .25s ease-in-out;
 		-webkit-appearance: none;
 		display: inline-block;
-		background-color: white;
-		color: #ffffff;
+		background-color: #ddd;
+		color: #111111;
 		border: 0;
 		border-radius: 4px;
 		cursor: pointer;
@@ -2172,7 +2218,7 @@ input, select, textarea {
 /* Footer */
 
 	#footer {
-		color:#000;
+		color:#ddd;
 		text-align: center;
 		padding: 2em 0 0 0;
 		font-size: 0.75em;
@@ -2188,7 +2234,7 @@ input, select, textarea {
 		}
 
 			#footer a:hover {
-				color: white;
+				color: #ddd;
 			}
 
 		#footer .copyright {
@@ -2200,7 +2246,7 @@ input, select, textarea {
 				display: inline-block;
 				padding-left: 1em;
 				margin-left: 1em;
-				border-left: solid 1px rgba(255, 255, 255, 0.25);
+				border-left: solid 1px rgba(250, 250, 250, 0.25);
 				line-height: 1;
 			}
 
