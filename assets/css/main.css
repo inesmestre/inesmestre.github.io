@@ -87,6 +87,7 @@ input, select, textarea {
 	border-radius: 4px;
 	outline: 0;
 	padding: 0.7em 1.5em 0.7em 1.5em;
+	text-align: center;
 }
 
 #status.success {
@@ -112,6 +113,12 @@ input, select, textarea {
 		opacity: 0;
 		pointer-events: none;
 	}
+}
+
+.smallT {
+	font-family: Arial;
+ 	font-size: 12px;
+	line-height: 1.6;
 }
 
 /* Row */
