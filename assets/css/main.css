@@ -1812,7 +1812,12 @@ input, select, textarea {
 	.fa-github {
 		background: #000;
 		color: #ddd;
-	  }
+	}
+
+	.fa-instagram {
+		background: #e1306c;
+		color: #ddd;
+	}
 
 	.icon {
 		text-decoration: none;
